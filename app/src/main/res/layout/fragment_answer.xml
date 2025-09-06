@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_view_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginBottom="24dp"
+        android:text="What is the largest planet?" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_planets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton android:id="@+id/radio_mercury" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MERCURY" />
+        <RadioButton android:id="@+id/radio_venus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VENUS" />
+        <RadioButton android:id="@+id/radio_earth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EARTH" />
+        <RadioButton android:id="@+id/radio_mars" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MARS" />
+        <RadioButton android:id="@+id/radio_jupiter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JUPITER" />
+        <RadioButton android:id="@+id/radio_saturn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SATURN" />
+        <RadioButton android:id="@+id/radio_uranus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="URANUS" />
+        <RadioButton android:id="@+id/radio_neptune" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NEPTUNE" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/text_view_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginBottom="8dp"
+        android:text="Result will show here" />
+
+    <TextView
+        android:id="@+id/text_view_explanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:text="Explanation will show here" />
+
+</LinearLayout>
